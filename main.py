@@ -15,8 +15,6 @@ from proxymanager import ProxyManager
 from colorama import Fore, Style, init
 from collections import defaultdict
 from random import randint
-from multiprocessing import Pool
-from multiprocessing import Process
 
 
 init(autoreset=True)
@@ -58,7 +56,7 @@ def process():
 
         elif initial_number in list_of_pids:
           with logger.printLock:
-            print("No new pids")
+            print(time.strftime("[%H:%M:%S]") + Style.BRIGHT + Fore.YELLOW + "No new pids")
           continue
 
         else:
