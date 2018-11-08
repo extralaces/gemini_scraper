@@ -11,7 +11,6 @@ import re
 
 
 from threading import Lock, Thread
-from proxymanager import ProxyManager
 from colorama import Fore, Style, init
 from collections import defaultdict
 from random import randint
